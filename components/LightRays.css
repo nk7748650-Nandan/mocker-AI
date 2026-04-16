@@ -1,0 +1,71 @@
+.light-rays-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.light-rays-container canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+/* Ensure content is above light rays */
+.content-above-rays {
+  position: relative;
+  z-index: 10;
+}
+
+/* Dashboard specific styling */
+.dashboard-light-rays {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* Auth pages styling */
+.auth-light-rays {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* Interview pages styling */
+.interview-light-rays {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .light-rays-container {
+    z-index: 1;
+  }
+}
+
+/* Performance optimizations */
+.light-rays-container canvas {
+  will-change: transform;
+  transform: translateZ(0);
+}

@@ -1,0 +1,11 @@
+{
+  "dialect": "postgresql",
+  "schema": "./utils/schema.js",
+  "out": "./drizzle",
+  "dbCredentials": {
+    "url": "postgresql://neondb_owner:npg_e4VjsZXEuQ9O@ep-dry-truth-adv9z94q-pooler.c-2.us-east-1.aws.neon.tech/AI-INTERVIEW-MOCKER?sslmode=require&channel_binding=require"
+  },
+  "studio": {
+    "port": 4984
+  }
+}
